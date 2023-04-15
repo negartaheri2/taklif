@@ -22,7 +22,7 @@ namespace ConsoleApplication2
 
         }
 
-        static int answer(int x)
+       Public static int answer(int x)
         {
          
            return ( Convert.ToInt32(Math.Pow(x, 2)+(2*x)-4));
