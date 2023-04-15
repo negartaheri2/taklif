@@ -37,7 +37,7 @@ namespace Console2
 
         }
 
-        static double final(double mianterm, double payanterm)
+       Public static double final(double mianterm, double payanterm)
         {
             double a = mianterm * 35 / 100;
             double b = payanterm * 65 / 100;
