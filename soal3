@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter number 1");
+           int x=Convert.ToInt32( Console.ReadLine());
+
+            Console.WriteLine("enter number 2");
+           int y=Convert.ToInt32( Console.ReadLine());
+
+           Console.WriteLine(answer(x, y));
+
+           Console.ReadKey();
+
+        }
+
+
+        public static  double answer(int x,int y)
+    {
+        double result = Math.Sqrt(Math.Abs(x) + Math.Pow(y, 2));
+        return result;
+
+    }
+
+
+        }
+}
