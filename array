@@ -1,0 +1,46 @@
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            calc (int[,]Array)
+            {
+                int rows = Array.GetLength(0);
+                int cols = Array.GetLength(1);
+
+                for(int j=0 ; j<rows;j++)
+                {
+                    for(int j =0 ; j<cols ; j++)
+                    {
+                        int[] values = new int[9];
+                        int index = 0;
+                        for(int k = -1 ; k<=1 ; k++)
+                        {
+                            for(int l = -1 ; l<=1 ; l++)
+                            {
+                                if(i+k >= 0 && i+k < rows && j+l >= 0 && j+l <cols)
+                                {
+                                    values[index] = Array[i + k , j + l];
+                                    index++;
+                                }
+                            }
+                        }
+                        Array.sort(values);
+                        int medianindex = index/2;
+                        int medianvalues = values[medianindex];
+                        Array [i , j] = medianvalue;
+                    }
+
+                }
+            }
+
+
+
+
+        }
+    }
+}
